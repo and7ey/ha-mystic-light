@@ -94,7 +94,7 @@ pub fn install_service(executable_path: PathBuf) -> ServiceResult<()> {
     tracing::info!("Updating service config");
 
     service.change_config(&service_info)?;
-    service.set_description("Companion service for Mystic Light Browser Cinema extension")?;
+    service.set_description("Companion Mystic Light service for Home Assistant")?;
 
     let actions = vec![
         ServiceAction {
