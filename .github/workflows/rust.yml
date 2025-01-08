@@ -1,0 +1,26 @@
+name: Rust
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build
+      run: cargo build --release
+    - name: Copy Binary
+      run: cp target/release/mystic_light_browser_cinema.exe .
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: release-binary
+        path: mystic_light_browser_cinema.exe
