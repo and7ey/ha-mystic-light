@@ -20,7 +20,7 @@ use props::Props;
 use sdk::create_sdk;
 
 const STATIC_PORT: u16 = 5001;
-const RANDOM_PORT: u16 = 0; // zero as a random unused port. [reference](https://rust-lang-nursery.github.io/rust-cookbook/net/server.html)
+// const RANDOM_PORT: u16 = 0; // zero as a random unused port. [reference](https://rust-lang-nursery.github.io/rust-cookbook/net/server.html)
 const MAX_ATTEMPTS_SDK_INIT: u8 = 1;
 const ATTEMPTS_TIMEOUT: u64 = 5;
 
