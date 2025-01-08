@@ -1,0 +1,26 @@
+[package]
+name = "mystic_light_browser_cinema"
+version = "1.0.5"
+edition = "2021"
+default-run = "app"
+
+[dependencies]
+async-graphql = { version="4.0.1", features=["tracing"] }
+async-graphql-axum = "4.0.1"
+axum = { version = "0.5.4", default-features = false }
+file-rotate = "0.7.0"
+mystic_light_sdk = { version="0.4.1", features=["async-graphql"] }
+serde = { version="1.0.138", features=["derive"] }
+serde_json = "1.0.82"
+tokio = { version="1.20.0", features=["rt-multi-thread"] }
+tower-http = { version = "0.3.4", features = ["cors", "trace"] }
+tracing = "0.1.36"
+tracing-subscriber = { version = "0.3.15", features=["env-filter"] }
+windows-service = "0.5.0"
+
+[features]
+default = []
+
+[profile.release]
+strip = true
+lto = true
