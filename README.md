@@ -29,3 +29,7 @@ To verify successful installation:
 1. Press `Win+R`, type `services.msc`, and press Enter
 2. Locate the "Mystic Light HA" service
 3. Confirm that the service status shows as "Running"
+
+## Troubleshooting
+
+Looks at `C:\ProgramData\Mystic Light\Mystic Light HA` for the logs.
