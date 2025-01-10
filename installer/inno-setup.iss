@@ -1,6 +1,6 @@
 
 #ifndef AppVersion
-  #define AppVersion "dev"
+  #define AppVersion "0.1.0"
 #endif
 
 #ifndef CargoOutput
@@ -16,8 +16,8 @@ SourceDir="..\"
 ; # App info
 AppName=Mystic Light HA
 AppVersion={#AppVersion}
-AppPublisher=meskill
-AppPublisherURL=https://github.com/meskill
+AppPublisher=and7ey
+AppPublisherURL=https://github.com/and7ey
 AppSupportURL=https://github.com/and7ey/ha-mystic-light/issues
 AppUpdatesURL=https://github.com/and7ey/ha-mystic-light/releases
 ; # Installation info
