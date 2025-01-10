@@ -1,4 +1,4 @@
-use mystic_light_browser_cinema::{log::start_logging, AppBuilder};
+use mystic_light_ha::{log::start_logging, AppBuilder};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     start_logging();
