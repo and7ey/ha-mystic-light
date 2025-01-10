@@ -14,14 +14,14 @@
 [Setup]
 SourceDir="..\"
 ; # App info
-AppName=Mystic Light Browser Cinema
+AppName=Mystic Light HA
 AppVersion={#AppVersion}
 AppPublisher=meskill
 AppPublisherURL=https://github.com/meskill
-AppSupportURL=https://github.com/meskill/mystic-light-browser-cinema/issues
-AppUpdatesURL=https://github.com/meskill/mystic-light-browser-cinema/releases
+AppSupportURL=https://github.com/and7ey/ha-mystic-light/issues
+AppUpdatesURL=https://github.com/and7ey/ha-mystic-light/releases
 ; # Installation info
-DefaultDirName={autopf}\Mystic Light Browser Cinema
+DefaultDirName={autopf}\Mystic Light HA
 DisableProgramGroupPage=yes
 ArchitecturesInstallIn64BitMode=x64
 ; we will start the service by ourselves
@@ -30,7 +30,7 @@ RestartApplications=no
 CloseApplications=yes
 ; # Output Info
 OutputDir="dist"
-OutputBaseFilename=mystic-light-browser-cinema
+OutputBaseFilename=mystic-light-ha
 ; # Looking
 WizardStyle=modern
 SetupIconFile="installer\assets\icon.ico"
@@ -57,4 +57,4 @@ Filename: "{app}\install.exe"; Flags: runhidden; WorkingDir: "{app}"
 Filename: "{app}\uninstall.exe"; Flags: runhidden; WorkingDir: "{app}"; RunOnceId: "UninstallService"
 
 [UninstallDelete]
-Type: filesandordirs; Name: "{commonappdata}\Mystic Light\Mystic Light Browser Cinema"
+Type: filesandordirs; Name: "{commonappdata}\Mystic Light\Mystic Light HA"
