@@ -11,7 +11,7 @@ use windows_service::{
     service_dispatcher,
 };
 
-use mystic_light_browser_cinema::{constants::SERVICE_NAME, log::start_logging, AppBuilder};
+use mystic_light_ha::{constants::SERVICE_NAME, log::start_logging, AppBuilder};
 
 const SERVICE_SDK_START_TIMEOUT: u64 = 60;
 const SERVICE_LISTEN_START_TIMEOUT: u64 = 20;
