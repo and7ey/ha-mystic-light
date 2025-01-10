@@ -5,7 +5,7 @@ use tracing_subscriber::fmt::format::FmtSpan;
 
 const LOG_ENV_NAME: &str = "MYSTIC_LIGHT_LOG";
 const LOG_DEFAULT_DIRECTIVES: &str =
-    "error,mystic_light_sdk=debug,mystic_light_browser_cinema=debug,install=debug,uninstall=debug,service=debug";
+    "error,mystic_light_sdk=debug,mystic_light_ha=debug,install=debug,uninstall=debug,service=debug";
 
 pub fn start_logging() {
     let env_filter = EnvFilter::try_from_env(LOG_ENV_NAME)
