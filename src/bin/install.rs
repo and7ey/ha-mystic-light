@@ -1,7 +1,7 @@
 use std::env;
 use std::error::Error;
 
-use mystic_light_browser_cinema::{log::start_logging, service::install_service};
+use mystic_light_ha::{log::start_logging, service::install_service};
 
 fn main() {
     start_logging();
