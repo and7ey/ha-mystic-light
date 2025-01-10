@@ -9,7 +9,7 @@ pub fn resolve_config_dir() -> PathBuf {
     };
 
     path.push("Mystic Light");
-    path.push("Mystic Light Browser Cinema");
+    path.push("Mystic Light HA");
 
     path
 }
