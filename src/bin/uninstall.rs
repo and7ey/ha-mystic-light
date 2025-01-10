@@ -1,4 +1,4 @@
-use mystic_light_browser_cinema::{log::start_logging, service::uninstall_service};
+use mystic_light_ha::{log::start_logging, service::uninstall_service};
 
 fn main() {
     start_logging();
