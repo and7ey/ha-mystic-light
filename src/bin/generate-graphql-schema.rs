@@ -1,4 +1,4 @@
-use mystic_light_browser_cinema::{graphql, sdk};
+use mystic_light_ha::{graphql, sdk};
 use std::error;
 use std::fs;
 
