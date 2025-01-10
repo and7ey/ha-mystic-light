@@ -1,31 +1,31 @@
-# Mystic Light server to work with Home Assistant
+# Mystic Light Server Integration with Home Assistant
 
-> Home Assistant will work only with installed [Mystic Light](https://www.msi.com/Landing/mystic-light-rgb-gaming-pc/mystic-light) and this app on Windows
+Home Assistant requires both the installed [Mystic Light](https://www.msi.com/Landing/mystic-light-rgb-gaming-pc/mystic-light) software and this application on Windows to function properly.
 
-## Is my device supported?
+## Device Compatibility Check
 
-- check your device info - if there any mention of "Mystic Light" then most likely it is supported
-- you can check the [Mystic Light compatible products](https://www.msi.com/Landing/mystic-light-rgb-gaming-pc/compatible-products)
-- if you have installed "Dragon Center" or "MSI Center" app you will see your device on the Mystic Light tab if it is supported
+To determine if your device is supported:
 
-## Setup
+- Verify your device specifications for any mention of "Mystic Light"
+- Consult the official [Mystic Light compatible products](https://www.msi.com/Landing/mystic-light-rgb-gaming-pc/compatible-products) list
+- If you have installed "Dragon Center" or "MSI Center," check the Mystic Light tab for supported devices
 
-1. Make sure you have installed "MSI SDK" program installed on your Windows PC. This program is installed with either "Dragon Center" or "MSI Center" app - you can find download links [here](https://www.msi.com/Landing/mystic-light-rgb-gaming-pc/download).
-2. Install this app
-3. Install [browser extension](#browser-extension)
+## Setup Instructions
 
-### The app
+1. Ensure the "MSI SDK" program is installed on your Windows PC. This typically comes bundled with either "Dragon Center" or "MSI Center." Download links can be found [here](https://www.msi.com/Landing/mystic-light-rgb-gaming-pc/download).
+2. Install this application
+3. Install the Home Assistant custom component
 
-1. Go to [releases page](https://github.com/meskill/mystic-light-browser-cinema/releases)
-2. Find latest release
-3. Locate download link with `Native-app installer` and click on it
-4. After download run it to install native app
+### Application Installation Steps
 
-To verify that everything is set correctly:
-1. Press `Win + R`, type `services.msc`, press enter
-2. Locate `Mystic Light Browser Cinema` service
-3. If it shows state `Running` then native-app is working
+1. Visit the [releases page](https://github.com/and7ey/mystic-light-ha-app/releases)
+2. Locate the latest release
+3. Find and click the download link labeled "installer.zip"
+4. Run the downloaded installer to install the app (Windows Defender may flag this as potentially malicious; add the file to the exclusion list if necessary)
+5. Add the application executable (service.exe) to the list of allowed apps through Windows Defender Firewall settings (refer to this [instruction](https://support.microsoft.com/en-us/windows/risks-of-allowing-apps-through-windows-defender-firewall-654559af-3f54-3dcf-349f-71ccd90bcc5c))
 
-<p align="center">
-  <img align="center" height="280" src="./assets/running-service.png">
-</p>
+To verify successful installation:
+
+1. Press `Win+R`, type `services.msc`, and press Enter
+2. Locate the "Mystic Light HA" service
+3. Confirm that the service status shows as "Running"
